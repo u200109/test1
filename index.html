@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> MATHLAB *Math is Meth*</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+      <a class="btn btn-primary" href="#">MATHLAB</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/aboutus.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contactus.html">Contact Us</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Select your Chapter
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Sets</a></li>
+              <li><a class="dropdown-item" href="#">Fuctions</a></li>
+              <li><a class="dropdown-item" href="#">Trignometry</a></li>
+              <li><a class="dropdown-item" href="#">Quadriatic Equations</a></li>
+              <li><a class="dropdown-item" href="#">PnC</a></li>
+              <li><a class="dropdown-item" href="#">Binomial Theoram</a></li>
+              <li><a class="dropdown-item" href="#">LCD</a></li>
+              <li><a class="dropdown-item" href="#">Integration</a></li>
+              <li><a class="dropdown-item" href="#">Probability</a></li>
+              <li><a class="dropdown-item" href="#">Vectors</a></li>
+              <li><a class="dropdown-item" href="#">Statistics</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Practise</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+        <div class="mx-2">
+          <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#Modal">Log In</button>
+          <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#SignupModal">Sign Up</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <div class="modal fade" id="Modal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="ModalLabel">LogIn</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form class="row g-3 my-5">
+            <div class="col-md-6">
+              <label for="inputEmail4" class="form-label">Email</label>
+              <input type="email" class="form-control" id="inputEmail4" placeholder="xyz@abcmail.com">
+            </div>
+            <div class="col-12">
+              <label for="inputAddress" class="form-label">Enter your password.</label>
+              <input type="password" class="form-control" id="inputAddress">
+            </div>
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                  Remember Me
+                </label>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="modal fade" id="SignupModal" tabindex="-1" aria-labelledby="SignupModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="SignupModalLabel">Become a Member</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form class="row g-3 my-5">
+            <div class="col-md-6">
+              <label for="inputEmail4" class="form-label">Email</label>
+              <input type="email" class="form-control" id="inputEmail4" placeholder="xyz@abcmail.com">
+            </div>
+            <div class="col-12">
+              <label for="inputname" class="form-label">Enter your username.</label>
+              <input type="text" class="form-control" id="inputname">
+            </div>
+            <div class="col-12">
+              <label for="inputname" class="form-label">Enter your School/College name.</label>
+              <input type="text" class="form-control" id="inputname">
+            </div>
+            <div class="col-12">
+              <label for="inputAddress" class="form-label">Create password.</label>
+              <input type="password" class="form-control" id="inputAddress">
+            </div>
+            <div class="col-12">
+              <label for="inputp2" class="form-label">Confirm password.</label>
+              <input type="password" class="form-control" id="inputp2">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Create Account</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="container my-5">
+    <div id="carouselExampleDark" class="carousel carousel-fade" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <img src="/c1.png" height="400" width="500" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h2>Welcome</h2>
+            <p>Dear Student, thank you for your visit.</p>
+            <button class="btn btn-danger">Most Asked Questions</button>
+            <button class="btn btn-warning">Theory Based Questions</button>
+            <button class="btn btn-success">Easy Questions</button>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="/c2.jpg" height="400" width="500" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h2>Please Ask anything without hesitation.</h2>
+            <p>At MATHLAB we try and provide the most suitable solution to every doubt.</p>
+            <button class="btn btn-primary">Ask your Doubt</button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="/c3.jpg" height="400" width="500" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h2>Keep Practising</h2>
+            <p>Only proper practise can bring forth great results.</p>
+          </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+
+      <div class="container my-5">
+        <div class="row mb-2">
+          <div class="col-md-6">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col p-4 d-flex flex-column position-static">
+                <strong class="d-inline-block mb-2 text-primary"></strong>
+                <h3 class="mb-0">Important</h3>
+                <div class="mb-1 text-muted">14 minutes ago</div>
+                <p class="card-text mb-auto">The Finals for Secondary School Students are set after this month, follow the complete guide for better preparation.</p>
+                <a href="#" class="stretched-link">Click here for guide</a>
+              </div>
+              <div class="col-auto d-none d-lg-block">
+                <img src="/t1.jpg" height="380" width="300" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col p-4 d-flex flex-column position-static">
+                <strong class="d-inline-block mb-2 text-success"></strong>
+                <h3 class="mb-0">Support</h3>
+                <div class="mb-1 text-muted">1 day ago</div>
+                <p class="mb-auto">Millionare Ynot Krats donated $8,000,000 to MATHLAB for future improvements, Presh Sir thanked him for his kind support.</p>
+                <a href="#" class="stretched-link">Read full story</a>
+              </div>
+              <div class="col-auto d-none d-lg-block">
+                <img src="/t2.jpg" height="380" width="300" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container my-5">
+      <div class="row mb-2">
+        <div class="col-md-6">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-success"></strong>
+              <h3 class="mb-0">Result Out</h3>
+              <div class="mb-1 text-muted">8 hours ago</div>
+              <p class="card-text mb-auto">High School student James Jerimiah Scored 98.6% in the final preparation test,Reed Gosling and Erina Anglebert scored 98% and 97.8% respectively.</p>
+              <a href="#" class="stretched-link">Check complete list</a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <img src="/t3.jpg" height="380" width="300" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-success"></strong>
+              <h3 class="mb-0">For More</h3>
+              <p class="card-text mb-auto">For more articles related to exam preparations and faculty meeting results, you can check the link below.</p>
+              <a href="#" class="stretched-link">More Articles</a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <img src="/t4.webp" height="380" width="300" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="container">
+      <p class="float-end"><a href="#">Back to top</a></p>
+      <p>© 2022-2023 icoder . <a href="#">Privacy</a> . <a href="#">Terms</a></p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"></script>
+</body>
+
+</html>
